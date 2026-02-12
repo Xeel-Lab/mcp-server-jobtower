@@ -254,6 +254,20 @@ Questa tabella è molto utile per analisi dettagliate sulle competenze richieste
 - Correlazioni tra skills e salari
 - Trend nelle competenze emergenti
 
-
 Le tre tabelle sono tutte collegate tramite la colonna job_posting_id.
+
+4) companies_analysis: contiene informazioni sulle aziende che hanno pubblicato le offerte di lavoro, come il tech stack usato.
+Le sue colonne sono:
+- company_id - DOUBLE (ID univoco della società che ha pubblicato l'offerta di lavoro)
+- company_name - VARCHAR (Nome della società che ha pubblicato l'offerta di lavoro)
+- company_url - VARCHAR (URL del sito web della società)
+- tech_stack - VARCHAR (Tech stack usato dalla società)
+- snap_source - VARCHAR (Sorgente dello snapshot dell'azienda)
+
+Questa tabella è molto utile per analisi sulle aziende! Posso aiutarti a identificare:
+- Tech stack più comuni in specifici settori
+- Trend nelle tecnologie emergenti
+
+La tabella è collegata alla tabella job_offers tramite la colonna company_id.
+
 """
